@@ -167,7 +167,16 @@ AI Governance
   Ethical
 ```
 
-#### KEEP AI TIED TO BUSINESS STRATEGIES
+RAG vs RALM (Retrieval Augmented Language Modeling) -> RAG is a RALM pattern, perhaps the most famous pattern.
+
+#### Red Team - AI Hacking
+
+* Grandma attack, overriding system instructions by roleplaying
+* Logic attack -> buy a car for $1
+* Encoding attack, use emoji or ascii art to get around defenses
+* Escalation of privilege attack -> protected data gets leaked via AI
+
+#### Keep AI Tied to Business Strategy
 
 * Educate yourself
 * Develop metrics

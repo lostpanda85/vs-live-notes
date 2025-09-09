@@ -11,6 +11,7 @@ Click the PDF link to the right and enter the login information.
 * Choose the right model! Not all models are trained the same.
 * Leverage MCP where possible.
 * Consider Aspire to manage tech stack during development.
+* Consider an AI Orchestration platform,
 
 ## Monday
 

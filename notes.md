@@ -192,7 +192,115 @@ RAG vs RALM (Retrieval Augmented Language Modeling) -> RAG is a RALM pattern, pe
 
 ### Catching up with C# Interfaces
 
+This was a class of what not to do 😁
+
+Example repo will be provided
+
 * Jeremy Clark
+
+#### Default implementation
+
+* Methods
+* Properties
+* Events
+* Indexers
+
+Can implement new functionality without breaking implementers by providing that default implementation.
+
+It is entirely possible to define a method body in an interface. This is the default implementation. Using `var` to define the logger will not work. The interface type must be used. Casting will work but its a bit strange.
+
+When calling interface members, use the interface type. This is the safest way to do this. Tooling will only fill in members that are NOT satisfied, since the default takes care of it. You can manually implement it and change the behavior. Using the concrete type also works. If the default is implemented, `var` will work.
+
+```csharp
+interface ILog {
+  void log();
+  void log {
+    //this is the default implementation.
+  }
+}
+```
+
+Explicit implementation has no access modifiers, it will throw a compile error. Method names explicitly call the interface member. This feature adds these members to the interface, can be useful to extend base functionality from Microsoft. Recommended way is to use interface type and implement interface normally.
+
+Be careful of assumptions about how interfaces are implemented. `Console.WriteLine` for instance, may not work in all environments...
+
+How do we stay safe? Default implementation should only access existing members.
+
+```csharp
+//safe example with LogException() calling Log()
+public interface ILogger
+{
+  void Log();
+  void LogException()
+  {
+    Log();
+  }
+}
+```
+
+##### Properties
+
+Default implementation is good for calculated properties, and not much else.
+
+If a property has a getter and a setter, both must have a default implementation or neither have one.
+
+```csharp
+//this will cause a stack overflow. Setters don't really need to have a default member.
+int BadMember
+{
+  get => 1;
+  get { BadMember = value; }
+}
+```
+
+Cannot use default implementation cannot specify an automatic property. Declarations only.
+
+##### Mocking Framework Considerations
+
+The chart below show support for Default Implementations. Check the capabilities of the mocking framework before selecting one.
+
+| Supported | Unsupported |
+|-|-|
+| Moq | FakeItEasy |
+| Rocks | NSubstitute |
+
+#### Access Modifiers
+
+There is a ton of misinformation out there around access modifiers and interfaces.
+
+Access Modifiers are now allowed on interfaces. This was added in C# 8.0
+
+##### Valid Modifiers
+
+* Public (default)
+* Private
+  * Limited usefulness
+  * Must have a default implementation
+  * Useful for refactoring complex public members
+  * Cannot be overwritten by a different implementation
+  * Might wanna consider different approaches....
+* Protected
+  * Undefined - compiler will not stop you from doing this
+  * Implementers must define the member
+* Internal
+  * Undefined - compiler will not stop you from doing this
+* Static
+  * Works exactly the same way as a class
+* Abstract
+  * Default
+* Partial
+  * Splits the interface across two files
+
+**Fun Fact** `static main` can be in an interface! (Don't do this)
+
+#### Abstract Class vs Interface
+
+|Interface|Abstract Class|
+|-|-|
+|Implement any number of interfaces|Inherit from a single base|
+|Limited implementation code|Unconstrained implementation code|
+|No automatic properties|automatic properties OK|
+|Properties, methods, events, indexers|properties, methods, events, indexers, fields, constructors, deconstructors|
 
 ### VS Code for Everyone
 

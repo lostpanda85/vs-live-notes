@@ -1,5 +1,17 @@
 # VS Live! Notes
 
+[All Conference Session Slides](https://vslive.com/events/san-diego-2025/tracks/track-list.aspx)
+
+Click the PDF link to the right and enter the login information.
+
+* **See Tara for login information**
+
+## Takeaways
+
+* Choose the right model! Not all models are trained the same.
+* Leverage MCP where possible.
+* Consider Aspire to manage tech stack during development.
+
 ## Monday
 
 Monday was a hands-on lab with Brian Randell.
@@ -116,11 +128,61 @@ Best Practices for Defining Agents. Keep It Simple. Clear objectives. Small focu
 
 ### Generative AI in Enterprise
 
-* <author>
+* Lino Tadros
+
+AI and Security are concerns. Volume of vectorized data might be too much for RAG patterns.
+
+Load balancing is also a concern, along with TPM limits across multiple applications. Most likely needs a custom implemented rate-limiter.
+
+TPM errors (HTTP 429) need validated in testing, scale is an issue that might not be discovered in testing since the volume is low.
+
+Leverage LLMs is all about prompt engineering (MISCONCEPTION!!!)\
+Who provides the UI?\
+Who monitors scale?\
+Who chooses and validates the models?\
+Model choice can lead to quite a bit of lost or gained value.\
+Consider Ollama, its self-hosted!\
+How do we safeguard secrets, PII, CHSD?\
+When do we recreate indexes in the vectorized data?
+
+Who uses AI? Everyone! Recruiting sectors are particularly bad because their models are garbage.
+
+Large enterprises (Apple, JPMorgan, Goldman Sachs, Samsun) were initially very weary of AI due to hallucinations, bad information, and inaccurate results. Deepfakes are also a huge concern. These enterprises are using RAI (Responsible AI) instead of providing direct access to Models. Companies were also weary of their data being stolen and the models trained on it. This is largely not a concern since its very expensive to retrain models.
+
+Who are the decision makes? CISO, CTO, Lead of Innovation (Architect), Head of Data Science, Business Heads, Chief Data Officer, CIO, Lawyers
+
+Prompt flow is being phased out, don't use it.
+
+Pick and choose the right model! This matters as models are trained on different data.
+
+```mermaid
+mindmap
+AI Governance
+  Accountable
+  Responsible
+  Explainable
+  Trustworthy
+  Transparent
+  Ethical
+```
+
+#### KEEP AI TIED TO BUSINESS STRATEGIES
+
+* Educate yourself
+* Develop metrics
+* Prepare for AI
+  * Consider cyber security posture
+  * Consider network infrastructure
+  * Consider data security
+  * Consider network security
+* Build AI
+* Algin AI goals to business goals
+* Identify use-cases!
+* Create a structure for the successful build and use of AI
 
 ### Catching up with C# Interfaces
 
-* <author>
+* Jeremy Clark
 
 ### VS Code for Everyone
 

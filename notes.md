@@ -108,6 +108,12 @@ Most issues with AI are going to be data issues.
 
 MCP (Model Context Protocol) JSON standard to allow models to talk to one another and to connect to external services.
 
+MCP is lead by Anthropic and Microsoft is on-board.
+
+MCP also provides scalable infrastructure.
+
+Best Practices for Defining Agents. Keep It Simple. Clear objectives. Small focused agents. Add guardrails and human oversight.
+
 ### Generative AI in Enterprise
 
 * <author>

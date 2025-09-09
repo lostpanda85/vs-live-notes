@@ -59,7 +59,7 @@ DeepSeek displayed its thought process and was much more verbose.
 * All use tokens to process requests. Tokens are not words, but they are pieces of the request/response.
 * Real time search outside of the sandboxed training data is now possible. Asking about newer things like stocks and game outcomes should work. Newer language syntax may not be.
 * LoRAs can be used to fine-tune models to reduce bias, add diversity, and adjust the 'style' as desired for images or other modes.
-* (HuggingFace)[https://huggingface.co] is a Model community that lists all models.
+* [HuggingFace](https://huggingface.co) is a Model community that lists all models.
 * Ollama is equivalent to Azure AI Services, but its self-host. Turbo sends it out to the cloud.
 
 [Stephen Wolfram's What is ChatGPT doing???](https://bri.gd/swchatgpt).

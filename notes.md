@@ -2,9 +2,13 @@
 
 ## Monday
 
+Monday was a hands-on lab with Brian Randell.
+
 ### Dev Ops Agent (CoPilot)
 
 #### Local
+
+[Lab Assignment Repo](https://github.com/brianrandell/vsl25sdhol)
 
 [Repository](https://github.com/lostpanda85/vs-live-lab)
 
@@ -62,9 +66,59 @@ DeepSeek displayed its thought process and was much more verbose.
 * [HuggingFace](https://huggingface.co) is a Model community that lists all models.
 * Ollama is equivalent to Azure AI Services, but its self-host. Turbo sends it out to the cloud.
 
-[Stephen Wolfram's What is ChatGPT doing???](https://bri.gd/swchatgpt).
+[Stephen Wolfram's What is ChatGPT doing???](https://bri.gd/swchatgpt)
 
 ## Tuesday
+
+Tuesday is a session and keynote day.
+
+### Agentic & Agent: You Keep Saying Those Words
+
+* Brian Randell
+
+AI Agent -> system that perceives, decides, and acts autonomously. Designed for autonomous decisions making and pursuing defined goals independently.
+
+Agentic behavior -> goal-directed actions with planning & tool use.
+
+Key -> initiative and adaptability beyond single prompt-response.
+
+Not all AI is agentic -> requires true decision making capabilities.
+
+Agents work, at their basic level by the User Provides data, agent has autonomy to accomplish their goal.
+
+System vs Behavior Distinction -> differentiating AI systems from their agentic behavior clarifies goals and implementation strategies.
+
+GitHub MCP only works with GitHub. It can't sent an email, but it can check github issues.
+
+LLMs retain 'memory', and can recall things from previous chats.
+
+Models are standardized with similar syntax, think terminals (zsh, bash, powershell).
+
+Autonomous Chat Assistants -> interact naturally, understand content, and provide helpful responses autonomously.
+
+Multi-Step Planning Bots -> capable of organizing tasks in sequence to achieve complex objectives independently.
+
+Adaptive Recommendation Systems -> systems that learn user preferences and adapt recommendations over time dramatically.
+
+In automation, traditional is predictable but not adaptive. Agentic is adaptive, but less predictable.
+
+Agentic systems are contextually aware, and are great at handling complex multi-step problems.
+
+Most issues with AI are going to be data issues.
+
+MCP (Model Context Protocol) JSON standard to allow models to talk to one another and to connect to external services.
+
+### Generative AI in Enterprise
+
+* <author>
+
+### Catching up with C# Interfaces
+
+* <author>
+
+### VS Code for Everyone
+
+* Brian Randell
 
 ## Wednesday
 

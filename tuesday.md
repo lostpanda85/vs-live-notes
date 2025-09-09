@@ -273,3 +273,4 @@ Open Source, cross-platform code editor wrapped in an Electron shell.
   * Add the Model to CoPilot
 * MCP Servers add tools for Agentic AI
   * Limit of 128 MCP tools can be loaded
+  * Don't always allow tooling if it does destructive changes

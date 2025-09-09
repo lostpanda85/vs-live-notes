@@ -223,3 +223,53 @@ Access Modifiers are now allowed on interfaces. This was added in C# 8.0
 
 * Brian Randell
 
+Open Source, cross-platform code editor wrapped in an Electron shell.
+
+### Installation and Configuration
+
+* VS Insiders provides a nightly build
+* CLI Installation (WinGet, Brew, Deb)
+* User install installs to the current user profile. CLI tools read admin rights to choose system vs user.
+* Install early in the machine build so it can be the default application for things like commit messages
+
+### Power Tools
+
+* Profiles
+  * Allows you to enable extensions based on workload.
+  * Turn off C# Dev Kit for angular development.
+  * Turn off Jest for C# development.
+  * Can switch between LLM Models.
+  * Snippets, extensions, keyboard shortcuts.
+  * Keep default profile clean, so that on launch VS Code is much faster.
+* Settings Sync
+  * Any associated account can sync settings.
+  * Look for `settings sync is on` under the account menu to configure settings sync.
+
+### Extensions
+
+* Container Tools is the new Docker Container extension. Covers most container formats.
+* Watch for depreciated extensions
+  * Either abandoned by creator
+  * Scooped up by another company
+* Theme support
+  * Color
+  * Product Icons Themes (Extension Icons)
+  * File Icon Themes (Editor Icons)
+* Stick with trusted publishers
+  * Extension developers can backdoor functionality in VS Code and introduce an attack vector
+
+### Advanced Workflows
+
+* CoPilot Modes
+  * Ask
+    * Talk but don't do
+  * Edit
+    * Talk and do updates
+  * Agent
+    * Connect to MCP Servers
+    * Multi-step execution
+* Local LLM Functionality is possible
+  * Start Ollama
+  * Add the Model to CoPilot
+* MCP Servers add tools for Agentic AI
+  * Limit of 128 MCP tools can be loaded

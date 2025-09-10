@@ -51,3 +51,116 @@ Classic Pipelines have been around a while, use a design to build pipeline. JSON
 * Decoupled
 * Fault tolerance
 * Scalability
+
+## Github Action in Action
+
+* Marcel de Vries
+
+### General
+
+* Use GitHub over AzDO
+  * GitHub will innovate, AzDO will not.
+* 0 Downtime Deployments?!?
+* Consider separating CI and CD
+  * CI is for Developers
+    * Provides fast feedback
+  * CD is for release engineers and business
+    * Isolates permissions for production environments
+* GitHub works by convention.
+  * The `.github` folder does a lot automatically when GitHub detects it
+* Don't just check for errors to validate deployments, check metrics too
+* [Test Examples](https://github.com/vriesmarcel/vslive-hq-2024)
+
+[Example App](https://github.com/vriesmarcel/globoticket)
+
+### Actions
+
+* Can be used to automate most tasks
+* Is an workflow engine
+* Easy to write and share
+* Uses yaml
+* Cross-platform
+* Containers supported
+* Runners can run locally or in the cloud
+* Can perform matrix build
+  * Multi-targeted build (x86/64, arm, etc)
+* Streaming Log
+* Built in secret store
+* Actions can be found in the GitHub Marketplace
+  * Checkmark indicates that the domain is verified, not the action
+
+
+### Workflow
+
+|Workflow Files|Actions|
+|-|-|
+|Reference Actions|Modular|
+|Exist within the repo|Exist within the repo or in other repos|
+|Template for workflows| |
+
+#### Structure of Workflows
+
+Event -> Runner 1 (Job 1..., Step 1...) -> Runner 2 (Job 2..., Step 1...) (Check slides)
+
+For basic syntax, refer to slides.
+
+* Runners define what platform performs the action
+* Secrets are encrypted in an isolated container
+  * Stamped into the app at build time
+
+### Security
+
+* Scanning is important
+  * Ensures that vulnerabilities are not being introduces
+  * License checks!
+* Built-in Advances Security
+  * Dependabot
+    * Automates removal of vulnerabilities
+  * CodeQL Scanning
+    * Analysis for known exploits
+    * eg, Clear text passwords discoverable
+  * External Tools
+
+### Releases
+
+* Control deployment
+* Separate from build pipeline
+* Controls versioning
+* Targets specific builds for release
+* Tags repos
+
+### Deployment Strategies
+
+* Use Slots!
+* App needs to be stateless
+* Traffic manager
+* Observability
+* Use Blue/Green Deployment
+  * k8s/OpenShift should handle this for us
+* Actions can drive traffic changes
+
+#### Ring Based Deployments
+
+* Deploy one ring at a time
+* (See slides)
+* Choose rings wisely
+
+#### Deployment Slots
+
+* Good for web apps
+* Traffic routing is built in
+* You can force requests to specific slots
+* Divide traffic until confident app is working as expected
+
+#### Observability
+
+* Ready Endpoints
+  * DB Connections Checks
+  * Integrations Checks
+* Live Endpoints
+  * Running check
+* Consider adding validations to workflow actions
+
+## Database DevOps with Next-Gen SQL Projects
+
+* Brian Randell

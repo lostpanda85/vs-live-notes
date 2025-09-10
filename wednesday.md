@@ -33,6 +33,21 @@ Classic Pipelines have been around a while, use a design to build pipeline. JSON
 * Get good at CLI as pipelines are just running CLI Commands behind the scenes
 * Each pipeline step runs in its own process.
 
-## Boiling the Frog: Implementing a Modern Message-Based Architecture without anyone noticing
+## Boiling the Frog: Implementing a modern message-based Architecture without anyone noticing
 
 * Hazel Bohon
+
+(See slides)
+
+### Why Modernize?
+
+* Easier to maintain
+* Easier to onboard
+* More reliable, more secure, more robust
+* Easier to change and deliver business value
+
+### Why messaged-based?
+
+* Decoupled
+* Fault tolerance
+* Scalability

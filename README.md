@@ -6,13 +6,16 @@ Click the PDF link to the right and enter the login information.
 
 * **See Tara for login information**
 
-## Takeaways
+## Overall Takeaways
 
 * Choose the right model! Not all models are trained the same.
 * Leverage MCP where possible.
 * Consider Aspire to manage tech stack during development.
 * Consider an AI Orchestration platform.
-* Be careful with advanced C# Interface functionality - here there be dragons.
+* Be careful with advanced C# Interface functionality.
+* Consider GitHub over AzDO.
+* Use Profiles in VS Code.
+* B/G Deployments are not my enemy.
 
 ## Monday
 

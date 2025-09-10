@@ -164,3 +164,4 @@ For basic syntax, refer to slides.
 ## Database DevOps with Next-Gen SQL Projects
 
 * Brian Randell
+

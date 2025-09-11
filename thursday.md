@@ -430,3 +430,5 @@ Note: *This was a demo heavy session*
 ### Building
 
 Check Slides and Repo
+
+* [Tool to assist with Analyzer Builder](https://github.com/KirillOsenkov/RoslynQuoter)

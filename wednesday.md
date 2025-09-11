@@ -165,3 +165,50 @@ For basic syntax, refer to slides.
 
 * Brian Randell
 
+DB DevOps, like any other DevOps, is a people problem. Getting people to change habits is hard.
+
+### Database Development
+
+* The Inner Loop
+* Needs a way to model data
+  * Golden Schema / Migrations
+* Need A way to protect work
+  * Version Control
+* Need A Way to test and validate changes
+  * Local DB 'Server'
+* Consider setting up a SQL Server Database Project in Visual Studio
+  * DACPACs serialize the DB schema into XML
+    * Glorified zip file, importable into Visual Studio
+  * Can also directly connect to DB by importing it
+    * Serialized database into visual studio project objects as sql scripts
+    * Doing this gives us both a designer and the database definition language scripting
+  * Building the DB in Visual Studio generates a DACPAC
+    * Generated DLL and pbd are not needed
+  * Publishing deploys to a server
+    * Compares whats there versus what is being deployed and incrementally updates
+  * Remote changes can be pulled in to sync
+
+### Database DevOps
+
+* The Outer Loop
+* A Way to build
+  * DACPACs
+  * DLLs
+  * Scripts
+* A way to deploy
+  * Automation!
+* A Way to validate
+  * Database Unit Tests
+    * This isn't fun and most orgs don't do it
+  * Integration Tests
+    * Bare minimum for db testing
+* Red Gate software may help here
+* GitHub actions can provide CI/CD pipelines
+
+### Containers
+
+* Portable & Lightweight
+* Consistent Image of SQL Server for all users
+* Efficient
+* Static volume contains changes
+* Consider Aspire

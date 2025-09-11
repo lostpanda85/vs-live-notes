@@ -327,6 +327,78 @@ Co: Complexity
 
 * Jason Bock
 
+[Demo Repo for this Session](https://github.com/jasonbock/writingmoderncsharp )
+
+```text
+"Warnings are errors that lack conviction"
+  - Unknown Microsoft Employee
+```
+
+```text
+"Regex syntax is like someone threw up on your code"
+  - Jason Bock
+```
+
+### Overview
+
+* Language Evolution
+* Modern C# features
+* Call to action
+
+### Language Evolution
+
+* Released in 2002
+* Object Oriented, Component Based
+* Added Roslyn (Compiler API) in 2012
+  * Compiles C# in C#
+  * THE .Net Compiler Platform
+  * Fully moved over in 2015
+* After Roslyn integration, C# gains 2-3x more features
+
+### Modern CSharp Features
+
+* `slnx` files are much cleaner than `sln` files
+  * `dotnet sln MySolutionFile.sln migrate` performs the migration
+* `.editorconfig` files
+  * Provides code styling rules
+  * Treat warning as errors
+* A `Directory.Build.Props` file along side the solution
+  * Sets project build properties for all projects in solution, like analysis mode
+  * Set default framework
+  * Language Version
+* A `Directory.Packages.props` file along side the solution
+  * Controls all nuget packages for all projects in the solution
+  * Overridable at the project level
+* Tuples work in constructor property assignments
+* [Ligatures](https://www.c-sharpcorner.com/article/writing-code-with-ligatu/) `=>`, its a font. Its still a fat arrow.
+* Verbatim string, multi literal string that is printed exactly as defined
+* Raw string literals, a string that has three `"` double quotes
+  * Lines up the gutter
+  * Dollar Signs and Quotes can change where the literal starts
+    * Ads ability to add quotes to property names
+* Patterns
+  * Matches patterns
+* `ThrowIf` syntax makes null checking easy and throws a error
+* `init` over `set` so that a property can be set only during construction
+  * Might need a `[SetsRequiredMembers]` decorator on the class definition
+* `record` can be `class` or `struct`
+  * Syntax sugar over a type
+  * Useful for database extraction
+  * Useful for messages
+* Source Generators
+  * Sets up a given type
+  * Can be used to provide mock objects for testing
+  * Can also help with Reflection issues
+  * AOT friendly
+
+### Call To Action
+
+* C# will continue development at its current pace
+* C# 14 due in about 2 months with 11 new features
+* C# 15 is slotting 9 new features, but its still in flux
+* Follow the roadmap!
+* Study!
+
 ## Analyzing Code in .Net
 
 * Jason Bock

@@ -16,6 +16,7 @@ Click the PDF link to the right and enter the login information.
 * Consider GitHub over AzDO.
 * Use Profiles in VS Code.
 * B/G Deployments are not my enemy.
+* Score and Track Technical Debt.
 
 ## Monday
 

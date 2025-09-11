@@ -410,6 +410,8 @@ Co: Complexity
 
 Note: *This feels like ESLint*
 
+Note: *This was a demo heavy session*
+
 [Sample Analyzer](https://github.com/jasonbock/transpire)\
 [2nd Repo for this session](https://github.com/JasonBock/AnalyzingCodeInDotNet)
 

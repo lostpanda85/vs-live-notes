@@ -171,6 +171,158 @@ Note: *This was a demo heavy session*
 
 * Chad Green
 
+### Topics
+
+* What is Tech Debt?
+* Pros and Cons of Tech Debt
+* What causes tech debt
+* Identify Tech Debt
+* Track Tech Debt
+
+### What is Tech Debt?
+
+* Ward Cunningham in 1992 coined the concept
+* Danger occurs when debt is not repaid
+  * Every minute on not quite right code is interest on that debt
+* Term comes from Martin Fowler
+  * Quick and dirty way sets us up for tech debt
+  * Which incurs interest payment, extra effort in future development
+* Deficient code that introduces risk in the form of time, security, morale, and other forms
+  * Typically the rest of poor decision making
+
+### Pros and Cons of Tech Debt
+
+* Tech debt can be devastating
+  * Degradation of quality
+  * Limits ability to innovate
+  * Longer development cycles
+  * Less responsive to market changes
+  * Customer churn
+  * Dev churn
+  * Higher upgrade costs
+  * System compatibility issues
+  * Poor end-user experience
+  * Poor IT Morale
+* Tech debt can be useful
+  * Sometimes taking that debt can get us out the door sooner
+  * Short term competitive advantage
+  * New features faster
+  * Short term capital preservation
+  * Faster speed to marker
+
+### What Causes Tech Debt
+
+* Insufficient up-front definition
+  * Poor requirements
+  * Not enough questions asked
+* Business pressures
+* Lack of Process or Understanding
+  * Could be industry best practices
+* Tightly-coupled components
+* Lack of test suites
+* Lack of Documentation
+  * Relevant documentation
+* Lack of collaboration
+* Parallel Development
+* Delayed refactoring
+* Lack of alignment to standards
+* Lack of knowledge
+* Lack of ownership
+* Poor technical leadership
+* Last minute specification changes
+
+#### Types of Technical Debt
+
+* Flawed Architecture
+* Build debt
+* Flawed Code
+  * This is most tech debt
+* Defects (Bugs)
+* Flawed Design
+* Poor/Stale/Over Documentation
+* Infrastructure
+* People
+* Flawed Process
+* Bad Requirements
+* Services
+* Inadequate Test Automation
+* Tests
+
+### Identify Tech Debt
+
+* Code Quality
+  * Clear Code
+  * Maintainable?
+  * Proper Documentation
+  * Are we refactoring?
+  * Well-Tested
+  * Efficiency
+    * Get it working first
+    * Make it better afterwards
+* Technical Deficiencies
+  * Has someone else coded this?
+  * Are user experiences consistent?
+  * Are solutions using the same reusable frameworks?
+  * Are best practices being followed?
+  * Are deployments taking too long?
+  * Are limits being exceeded or users seeing errors?
+* Business Misalignment
+
+### Opportunities to Identify Debt
+
+* While coding
+* Code review
+* Code Analysis tools
+  * Tooling is built into Visual Studio
+* Pull Requests
+* Stand Ups
+* Sprint Review
+  * May not be the best place due to stakeholders being present
+* Look for them! Usually hidden in plain sight.
+
+### Record Tech Debt
+
+* User Story
+* Product Backlog Item
+* Requirement on a future story
+* Issue
+* NOT A BUG
+
+#### What to record?
+
+* Problem statement
+  * Be careful with wording
+  * Use business jargon
+* Story Points (Hours)
+* Criticality
+* Complexity
+* Reward (Business value)
+* Remediation Cost
+
+### Track Technical Debt
+
+* Consider making a tech debt register with all the info to track
+* Add a tech debt score
+
+#### Tech Debt Score
+
+* Consider using the following calculation
+
+`(r x .2) + (CR x .15) - (CO x.15)`
+
+R: Reward\
+Cr: Criticality\
+Co: Complexity
+
+#### Tech Debt Ratio
+
+* Consider the following calculation for scoring multiple products and systems
+
+`(Remediation Cost / Development Cost) * 100%`
+
+* Greater than 5%? take care of it!
+* Less than 5%? Maybe not needed
+
 ## Writing Modern CSharp
 
 * Jason Bock

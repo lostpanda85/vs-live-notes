@@ -410,7 +410,7 @@ Co: Complexity
 
 Note: *This feels like ESLint*
 
-[Repo for this session](https://github.com/jasonbock/transpire)\
+[Sample Analyzer](https://github.com/jasonbock/transpire)\
 [2nd Repo for this session](https://github.com/JasonBock/AnalyzingCodeInDotNet)
 
 ### Contents
@@ -424,3 +424,7 @@ Note: *This feels like ESLint*
 * Analyzers Comes from Roslyn (Compiler API)
 * Tons of tools exist to help (See slides for list)
 * Analyzer warnings/errors can be suppressed if needed
+
+### Building
+
+Check Slides and Repo

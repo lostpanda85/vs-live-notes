@@ -402,3 +402,35 @@ Co: Complexity
 ## Analyzing Code in .Net
 
 * Jason Bock
+
+```text
+"No one writes code that is purposefully bad"
+  - Jason Bock
+```
+
+```text
+"Dude....its a Thursday Afternoon"
+  - Jason Bock
+```
+
+```text
+"There are a finite number of keystrokes left in your hands before you die" 
+  - Scott Hanselman
+```
+
+[Repo for this session](https://github.com/jasonbock/transpire)
+
+### Contents
+
+* Analysis
+* Building
+* Call to Action
+
+### Analysis
+
+* Analyzers Comes from Roslyn (Compiler API)
+* Tons of tools exist to help (See slides for list)
+
+### Building
+
+### Call to Action

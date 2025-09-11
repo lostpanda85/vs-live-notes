@@ -17,6 +17,8 @@ Click the PDF link to the right and enter the login information.
 * Use Profiles in VS Code.
 * B/G Deployments are not my enemy.
 * Score and Track Technical Debt.
+* Consider Team Code Reviews.
+* Consider CoPilot for Pull Requests.
 
 ## Monday
 
